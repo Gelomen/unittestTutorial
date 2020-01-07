@@ -1,30 +1,30 @@
 # encoding=utf-8
 
 import unittest
-from selenium import webdriver
 import time
+from src.lib.Browser import Browser
 
 
 class MyClass(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.browser = Browser().browser(headless=False, location="../../lib/chromedriver.exe")
 
     def tearDown(self):
-        self.driver.quit()
+        self.browser.quit()
 
     def test_search(self):
-        self.driver.get("http://sogou.com")
+        self.browser.get("http://www.baidu.com")
 
-        self.driver.find_element_by_id("query").clear()
+        self.browser.find_element_by_id("kw").clear()
 
-        self.driver.find_element_by_id("query").send_keys(u"Webdriver 实战宝典")
+        self.browser.find_element_by_id("kw").send_keys(u"Webdriver")
 
-        self.driver.find_element_by_id("stb").click()
+        self.browser.find_element_by_id("su").click()
 
         time.sleep(3)
 
-        assert u"吴晓华" in self.driver.page_source, "页面中不存在要寻找的关键字"
+        assert u"Webdriver" in self.browser.page_source, "页面中不存在要寻找的关键字"
 
 
 if __name__ == "__main__":

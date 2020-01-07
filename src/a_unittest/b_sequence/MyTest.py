@@ -18,19 +18,15 @@ class MyTest(unittest.TestCase):
 
     # 具体的测试用例，一定要以 test 开头
     def test_add(self):
-        print("run add()")
-        self.assertEqual(MyTest.c.add(1, 2, 12), 15, "test add fail")
+        self.assertEqual(self.c.add(1, 2, 12), 15, "test add fail")
 
     def test_sub(self):
-        print("run sub()")
-        self.assertEqual(MyTest.c.sub(2, 1, 3), -2, "test sub fail")
+        self.assertEqual(self.c.sub(2, 1, 3), -2, "test sub fail")
 
     def test_mul(self):
-        print("run mul()")
         self.assertEqual(Calc.mul(2, 3, 5), 30, "test mul fail")
 
     def test_div(self):
-        print("run div()")
         self.assertEqual(Calc.div(8, 2, 4), 1, "test div fail")
 
 
@@ -47,5 +43,4 @@ if __name__ == "__main__":
     suite.addTest(MyTest("test_sub"))
 
     # 创建 TextTestRunner 实例对象
-    runner = unittest.TextTestRunner(verbosity=2)
-    runner.run(suite)
+    unittest.TextTestRunner(verbosity=2).run(suite)

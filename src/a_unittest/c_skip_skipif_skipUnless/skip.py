@@ -13,7 +13,7 @@ class TestSequenceFunctions(unittest.TestCase):
         self.seq = list(range(10))
 
     # 无条件忽略该测试方法
-    @unittest.skip("skipping")
+    @unittest.skip("just skip")
     def test_shuffle(self):
         random.shuffle(self.seq)
         self.seq.sort()

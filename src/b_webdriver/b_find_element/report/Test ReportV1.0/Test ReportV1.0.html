@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>测试报告</title>
+    <title>Find elements report</title>
     <meta name="generator" content="HTMLTestRunner 1.2.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -233,14 +233,14 @@ table       { font-size: 100%; }
                 innerSize: '80%',
                 name: '比例',
                 data: [
-                    ['通过', 2],
+                    ['通过', 8],
                     {
                         name: '失败',
-                        y: 2,
+                        y: 0,
                         sliced: true,
                         selected: true
                     },
-                    ['错误', 0]
+                    ['错误', 1]
                 ]
             }]
         }, function(c) {
@@ -373,15 +373,15 @@ function html_escape(s) {
 <div class='pic_looper'></div> <div class='pic_show'><div class='pic_box'><img src=''/></div> </div>
 <div class='heading'>
 <div style="width: 650px; float: left;">
-    <h1 style="font-family: Microsoft YaHei">测试报告</h1>
+    <h1 style="font-family: Microsoft YaHei">Find elements report</h1>
     <p class='attribute'><strong>测试人员 : </strong> Gelomen</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-01-07 16:16:47</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 4，通过 2，失败 2，通过率 = 50.00%</p>
-<p class='attribute'><strong>失败用例合集 : </strong> <div class='panel-default' style='float: left;'><a class='showDetail' data-toggle='collapse' href='#failCaseOl' style='text-decoration: none;'>点击查看</a></div><ol id='failCaseOl' class='collapse' style='float: left;'><li>test_add (TestMyClass.SuiteTestCalc)</li><li>test_sub (TestMyClass.SuiteTestCalc)</li></ol></p>
-<p class='attribute'><strong>错误用例合集 : </strong> <ol style='float: left;'>无</ol></p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-01-07 18:51:52</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:01:20.199476</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 9，通过 8，错误 1，通过率 = 88.89%</p>
+<p class='attribute'><strong>失败用例合集 : </strong> <ol style='float: left;'>无</ol></p>
+<p class='attribute'><strong>错误用例合集 : </strong> <div class='panel-default' style='float: left;'><a class='showDetail' data-toggle='collapse' href='#errorCaseOl' style='text-decoration: none;'>点击查看</a></div><ol id='errorCaseOl' class='collapse' style='float: left;'><li>test_find_element_by_id (a_by_id.TestById.TestById)</li></ol></p>
 
-    <p class='description'>测试报告详细描述</p>
+    <p class='description'>通过id、name、link text、tag name、class name、xpath、css selector查找元素</p>
 </div>
 <div id="container"></div>
 </div>
@@ -390,11 +390,11 @@ function html_escape(s) {
 
 <div style="width: 500px; clear: both;">
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 50.00% }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 2 }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 2 }</a>
-<a class="btn btn-warning" href='javascript:showCase(3)'>错误{ 0 }</a>
-<a class="btn btn-info" href='javascript:showCase(4)'>所有{ 4 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 88.89% }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 8 }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-warning" href='javascript:showCase(3)'>错误{ 1 }</a>
+<a class="btn btn-info" href='javascript:showCase(4)'>所有{ 9 }</a>
 </p>
 </div>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
@@ -419,87 +419,192 @@ function html_escape(s) {
     <td>详细</td>
 </tr>
 
-<tr class='failClass warning'>
-    <td>SuiteTestCalc</td>
-    <td></td>
-    <td class="text-center">2</td>
-    <td class="text-center">0</td>
-    <td class="text-center">2</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0.0秒</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',2)" class="detail" id='c1'>详细</a></td>
-</tr>
-
-    <tr id='ft1_1' class='none'>
-        <td class='failCase' style="vertical-align: middle"><div class='testcase'>test_add</div></td>
-        <td style="vertical-align: middle"></td>
-        <td colspan='5' align='center'>
-        <!--默认收起错误信息 -Findyou
-        <button id='btn_ft1_1' type="button"  class="btn btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>失败</button>
-        <div id='div_ft1_1' class="collapse">  -->
-
-        <!-- 默认展开错误信息 -Findyou /  修复失败按钮的颜色 -- Gelomen -->
-        <button id='btn_ft1_1' type="button"  class="btn btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>失败</button>
-        <div id='div_ft1_1' class="collapse in">
-        <pre style="text-align:left">
-        
-ft1_1: Traceback (most recent call last):
-  File "G:\work\X\unittestTutorial\src\a_unittest\f_HTML_report\TestMyClass.py", line 38, in test_add
-    self.assertEqual(self.c.add(1, 32, 56), 90, "求和结果错误！")
-AssertionError: 89 != 90 : 求和结果错误！
-
-
-        </pre>
-        </div>
-        </td>
-        <td class='failCase' style="vertical-align: middle"></td>
-    </tr>
-    
-    <tr id='ft1_2' class='none'>
-        <td class='failCase' style="vertical-align: middle"><div class='testcase'>test_sub</div></td>
-        <td style="vertical-align: middle"></td>
-        <td colspan='5' align='center'>
-        <!--默认收起错误信息 -Findyou
-        <button id='btn_ft1_2' type="button"  class="btn btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
-        <div id='div_ft1_2' class="collapse">  -->
-
-        <!-- 默认展开错误信息 -Findyou /  修复失败按钮的颜色 -- Gelomen -->
-        <button id='btn_ft1_2' type="button"  class="btn btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
-        <div id='div_ft1_2' class="collapse in">
-        <pre style="text-align:left">
-        
-ft1_2: Traceback (most recent call last):
-  File "G:\work\X\unittestTutorial\src\a_unittest\f_HTML_report\TestMyClass.py", line 35, in test_sub
-    self.assertEqual(self.c.sub(100, 34, 6), 61, "求差结果错误！")
-AssertionError: 60 != 61 : 求差结果错误！
-
-
-        </pre>
-        </div>
-        </td>
-        <td class='failCase' style="vertical-align: middle"></td>
-    </tr>
-    
 <tr class='passClass warning'>
-    <td>SuiteTestPow</td>
+    <td>TestAction</td>
     <td></td>
-    <td class="text-center">2</td>
-    <td class="text-center">2</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center">0.0秒</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c2',2)" class="detail" id='c2'>详细</a></td>
+    <td class="text-center">17.9秒</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='pt2_1' class='hiddenRow'>
-    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_hasattr</div></td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_find_element_by_css_selector</div></td>
     <td style="vertical-align: left"></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
     <td class='passCase' style="vertical-align: middle"></td>
 </tr>
 
-<tr id='pt2_2' class='hiddenRow'>
-    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_pow</div></td>
+<tr class='errorClass warning'>
+    <td>TestById</td>
+    <td></td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">1</td>
+    <td class="text-center">7.48秒</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',1)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='et2_1' class='none'>
+    <td class='errorCase' style="vertical-align: middle"><div class='testcase'>test_find_element_by_id</div></td>
+    <td style="vertical-align: middle"></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_et2_1' type="button"  class="btn btn-xs collapsed" data-toggle="collapse" data-target='#div_et2_1'>错误</button>
+    <div id='div_et2_1' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou /  修复失败按钮的颜色 -- Gelomen -->
+    <button id='btn_et2_1' type="button"  class="btn btn-xs" data-toggle="collapse" data-target='#div_et2_1,#div_et2_1_screenshot'>错误</button>
+    <div id='div_et2_1' class="collapse in">
+    <pre style="text-align:left">
+    
+et2_1: errorImg[1.png]errorImg, browser[chrome(79.0.3945.88)]browser
+Traceback (most recent call last):
+  File "G:\work\X\unittestTutorial\src\b_webdriver\b_find_element\a_by_id\TestById.py", line 23, in test_find_element_by_id
+    self.browser.find_element_by_id("passwords")
+  File "D:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "D:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "D:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="passwords"]"}
+  (Session info: chrome=79.0.3945.88)
+
+
+
+    </pre>
+    </div>
+    </td>
+    <td class="text-center" style="vertical-align: middle"><div id='div_et2_1_screenshot' class="collapse in">浏览器版本：<div style="color: brown;">chrome(79.0.3945.88)</div></br>截图：</br><a class="screenshot" href="javascript:void(0)" img="image/1.png">img_1.png</a></div></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>TestByName</td>
+    <td></td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">10.39秒</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',1)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_find_element_by_name</div></td>
+    <td style="vertical-align: left"></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase' style="vertical-align: middle"></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>TestByLinkText</td>
+    <td></td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">7.15秒</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',1)" class="detail" id='c4'>详细</a></td>
+</tr>
+
+<tr id='pt4_1' class='hiddenRow'>
+    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_find_element_by_link_text</div></td>
+    <td style="vertical-align: left"></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase' style="vertical-align: middle"></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>TestByTagName</td>
+    <td></td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">7.15秒</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',1)" class="detail" id='c5'>详细</a></td>
+</tr>
+
+<tr id='pt5_1' class='hiddenRow'>
+    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_find_element_by_tag_name</div></td>
+    <td style="vertical-align: left"></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase' style="vertical-align: middle"></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>TestByClassName</td>
+    <td></td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">7.17秒</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c6',1)" class="detail" id='c6'>详细</a></td>
+</tr>
+
+<tr id='pt6_1' class='hiddenRow'>
+    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_find_element_by_class_name</div></td>
+    <td style="vertical-align: left"></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase' style="vertical-align: middle"></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>TestByXpath</td>
+    <td></td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">8.41秒</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c7',1)" class="detail" id='c7'>详细</a></td>
+</tr>
+
+<tr id='pt7_1' class='hiddenRow'>
+    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_find_element_by_xpath</div></td>
+    <td style="vertical-align: left">-----------------------</td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase' style="vertical-align: middle"></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>TestByCssSelector</td>
+    <td></td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">7.32秒</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c8',1)" class="detail" id='c8'>详细</a></td>
+</tr>
+
+<tr id='pt8_1' class='hiddenRow'>
+    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_find_element_by_css_selector</div></td>
+    <td style="vertical-align: left"></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase' style="vertical-align: middle"></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>TestFindTable</td>
+    <td></td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">7.22秒</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c9',1)" class="detail" id='c9'>详细</a></td>
+</tr>
+
+<tr id='pt9_1' class='hiddenRow'>
+    <td class='passCase' style="vertical-align: middle"><div class='testcase'>test_find_element_by_css_selector</div></td>
     <td style="vertical-align: left"></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
     <td class='passCase' style="vertical-align: middle"></td>
@@ -507,12 +612,12 @@ AssertionError: 60 != 61 : 求差结果错误！
 
 <tr id='total_row' class="text-center active">
     <td colspan='2'>总计</td>
-    <td>4</td>
-    <td>2</td>
-    <td>2</td>
+    <td>9</td>
+    <td>8</td>
     <td>0</td>
-    <td>0.0秒</td>
-    <td>通过率：50.00%</td>
+    <td>1</td>
+    <td>80.19秒</td>
+    <td>通过率：88.89%</td>
 </tr>
 </table>
 
