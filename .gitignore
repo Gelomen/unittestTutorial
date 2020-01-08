@@ -14,7 +14,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -84,6 +83,8 @@ celerybeat-schedule
 env/
 venv/
 ENV/
+ubuntu-venv/
+win-venv/
 
 # Spyder project settings
 .spyderproject

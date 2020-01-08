@@ -1,6 +1,11 @@
 # encoding=utf-8
 
 import unittest
+import os
+import sys
+curPath = os.path.abspath("../")
+rootPath = os.path.split(curPath)[0]
+sys.path.append(os.path.split(rootPath)[0])
 from src.lib import HTMLTestReportCN
 
 if __name__ == "__main__":
